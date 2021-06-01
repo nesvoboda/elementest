@@ -1,7 +1,11 @@
 #include "elementest.hpp"
 
 TEST(elementestWorks) {
-	std::cout << "Seems that everything is fine!" << std::endl;
+	ASSERT_EQ(4, 2+2);
+}
+
+TEST(failingTest) {
+	ASSERT_EQ(5, 2+2);
 }
 
 int main(void) {
